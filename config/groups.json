@@ -1,0 +1,58 @@
+{
+    "luzern": [
+        {
+            "name": "City (Default)",
+            "parkings": [
+                "Löwencenter",
+                "City-Parking",
+                "Bahnhofparking"
+            ]
+        },
+        {
+            "name": "All",
+            "parkings": []
+        }
+    ],
+    "basel": [
+        {
+            "name": "City (Default)",
+            "parkings": [
+                "City",
+                "Elisabethen",
+                "Messe"
+            ]
+        },
+        {
+            "name": "All",
+            "parkings": []
+        }
+    ],
+    "stgallen": [
+        {
+            "name": "City (Default)",
+            "parkings": [
+                "Burggraben",
+                "Bahnhof",
+                "Neumarkt"
+            ]
+        },
+        {
+            "name": "All",
+            "parkings": []
+        }
+    ],
+    "zurich": [
+        {
+            "name": "City (Default)",
+            "parkings": [
+                "City Parking",
+                "Urania",
+                "Hohe Promenade"
+            ]
+        },
+        {
+            "name": "All",
+            "parkings": []
+        }
+    ]
+}
