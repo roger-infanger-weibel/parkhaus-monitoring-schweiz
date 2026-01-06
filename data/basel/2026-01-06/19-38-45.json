@@ -1,0 +1,137 @@
+{
+  "status": "success",
+  "city": "basel",
+  "data": {
+    "parkings": {
+      "baselparkhauscity": {
+        "id": "baselparkhauscity",
+        "name": "City",
+        "free": 987,
+        "total": 1114,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhauseurope": {
+        "id": "baselparkhauseurope",
+        "name": "Europe",
+        "free": 68,
+        "total": 120,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausrebgasse": {
+        "id": "baselparkhausrebgasse",
+        "name": "Rebgasse",
+        "free": 144,
+        "total": 250,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausaeschen": {
+        "id": "baselparkhausaeschen",
+        "name": "Aeschen",
+        "free": 86,
+        "total": 95,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausclaramatte": {
+        "id": "baselparkhausclaramatte",
+        "name": "Claramatte",
+        "free": 8,
+        "total": 120,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhauscentralbahn": {
+        "id": "baselparkhauscentralbahn",
+        "name": "Centralbahn",
+        "free": 304,
+        "total": 287,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausbahnhofsued": {
+        "id": "baselparkhausbahnhofsued",
+        "name": "Bahnhof Süd",
+        "free": 80,
+        "total": 100,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhauselisabethen": {
+        "id": "baselparkhauselisabethen",
+        "name": "Elisabethen",
+        "free": 627,
+        "total": 840,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhaussteinen": {
+        "id": "baselparkhaussteinen",
+        "name": "Steinen",
+        "free": 335,
+        "total": 526,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausstorchen": {
+        "id": "baselparkhausstorchen",
+        "name": "Storchen",
+        "free": 76,
+        "total": 142,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausbadbahnhof": {
+        "id": "baselparkhausbadbahnhof",
+        "name": "Bad. Bahnhof",
+        "free": 214,
+        "total": 750,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausmesse": {
+        "id": "baselparkhausmesse",
+        "name": "Messe",
+        "free": 538,
+        "total": 727,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausclarahuus": {
+        "id": "baselparkhausclarahuus",
+        "name": "Clarahuus",
+        "free": 7,
+        "total": 52,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhauspostbasel": {
+        "id": "baselparkhauspostbasel",
+        "name": "Post Basel",
+        "free": 77,
+        "total": 0,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhausanfos": {
+        "id": "baselparkhausanfos",
+        "name": "Anfos",
+        "free": 148,
+        "total": 165,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      },
+      "baselparkhauskunstmuseum": {
+        "id": "baselparkhauskunstmuseum",
+        "name": "Kunstmuseum",
+        "free": 238,
+        "total": 350,
+        "status": "open",
+        "timestamp": "2026-01-06T19:35:00"
+      }
+    }
+  },
+  "timestamp": "2026-01-06T19:35:00"
+}
