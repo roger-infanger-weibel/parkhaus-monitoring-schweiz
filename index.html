@@ -277,8 +277,8 @@
 
             data.datasets.forEach(dataset => {
                 const label = dataset.label || "";
-                const isVisible = defaultVisible.some(keyword => label.includes(keyword));
-                dataset.hidden = !isVisible;
+                // const isVisible = defaultVisible.some(keyword => label.includes(keyword));
+                // dataset.hidden = !isVisible;
             });
 
             myChart = new Chart(ctx, {
@@ -356,5 +356,6 @@
         loadDates();
     </script>
 </body>
+
 
 </html>
