@@ -77,6 +77,14 @@
                 </select>
             </div>
             <div class="col-auto">
+                <label for="group-select" class="col-form-label">Select Group:</label>
+            </div>
+            <div class="col-auto">
+                <select id="group-select" class="form-select" onchange="onGroupChange()">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="col-auto">
                 <button class="btn btn-primary" onclick="loadData()">Reload Data</button>
             </div>
         </div>
@@ -91,6 +99,7 @@
     <script>
         Chart.register(ChartDataLabels);
         let myChart = null;
+        let GROUP_CONFIG = {};
         const REPO_OWNER = "roger-infanger-weibel";
         const REPO_NAME = "parkhaus-monitoring-schweiz";
         const GITHUB_API_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/data`;
@@ -102,32 +111,68 @@
         const CITY_CONFIG = {
             luzern: {
                 name: "Luzern",
-                color: "#3498db",
-                defaultVisible: ["Löwencenter", "City-Parking", "Bahnhofparking"]
+                color: "#3498db"
             },
             basel: {
                 name: "Basel",
-                color: "#e74c3c",
-                defaultVisible: ["City", "Elisabethen", "Messe"]
+                color: "#e74c3c"
             },
             stgallen: {
                 name: "St. Gallen",
-                color: "#2ecc71",
-                defaultVisible: ["Burggraben", "Bahnhof", "Neumarkt"]
+                color: "#2ecc71"
             },
             zurich: {
                 name: "Zürich",
-                color: "#9b59b6",
-                defaultVisible: ["City Parking", "Urania", "Hohe Promenade"]
+                color: "#9b59b6"
             }
         };
+
+        async function loadGroups() {
+            try {
+                const response = await fetch('config/groups.json');
+                if (!response.ok) throw new Error("Failed to fetch groups config");
+                GROUP_CONFIG = await response.json();
+                updateGroupSelect();
+            } catch (error) {
+                console.error("Error loading groups:", error);
+            }
+        }
+
+        function updateGroupSelect() {
+            const city = getCurrentCity();
+            const select = document.getElementById('group-select');
+            const groups = GROUP_CONFIG[city] || [];
+
+            select.innerHTML = '<option value="all">All</option>';
+
+            groups.forEach((group, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.text = group.name;
+                select.add(option);
+            });
+
+            // Select first group by default if available
+            if (groups.length > 0) {
+                select.value = 0;
+            } else {
+                select.value = "all";
+            }
+        }
 
         function getCurrentCity() {
             return document.getElementById('city-select').value;
         }
 
         function onCityChange() {
+            updateGroupSelect();
             loadDates();
+        }
+
+        function onGroupChange() {
+            if (myChart) {
+                renderChart(myChart.data.originalData);
+            }
         }
 
         async function loadDates() {
@@ -271,14 +316,25 @@
                 myChart.destroy();
             }
 
-            // Filter datasets for default visibility
             const cityConfig = CITY_CONFIG[data.city];
-            const defaultVisible = cityConfig.defaultVisible || [];
+
+            // Filtering logic based on group selection
+            const groupSelect = document.getElementById('group-select');
+            const selectedGroupIndex = groupSelect.value;
+            const groups = GROUP_CONFIG[data.city] || [];
+
+            let visibleParkings = null;
+            if (selectedGroupIndex !== "all" && groups[selectedGroupIndex]) {
+                visibleParkings = groups[selectedGroupIndex].parkings;
+            }
 
             data.datasets.forEach(dataset => {
                 const label = dataset.label || "";
-                // const isVisible = defaultVisible.some(keyword => label.includes(keyword));
-                // dataset.hidden = !isVisible;
+                if (visibleParkings) {
+                    dataset.hidden = !visibleParkings.includes(label);
+                } else {
+                    dataset.hidden = false;
+                }
             });
 
             myChart = new Chart(ctx, {
@@ -350,12 +406,15 @@
                     }
                 }
             });
+            // Store original data for filtering without re-fetching
+            myChart.data.originalData = data;
         }
 
         // Initial load
-        loadDates();
+        loadGroups().then(() => {
+            loadDates();
+        });
     </script>
 </body>
-
 
 </html>
