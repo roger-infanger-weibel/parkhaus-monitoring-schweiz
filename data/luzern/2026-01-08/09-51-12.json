@@ -1,0 +1,129 @@
+{
+  "status": "success",
+  "city": "luzern",
+  "data": {
+    "parkings": {
+      "AP02": {
+        "id": "AP02",
+        "name": "Parkplatz Sportgebäude",
+        "free": 57,
+        "total": 97,
+        "status": "open",
+        "timestamp": "2026-01-08T10:50:42+01:00"
+      },
+      "AP01": {
+        "id": "AP01",
+        "name": "Parkhaus Sportgebäude",
+        "free": 122,
+        "total": 280,
+        "status": "open",
+        "timestamp": "2026-01-08T10:50:43+01:00"
+      },
+      "SP02": {
+        "id": "SP02",
+        "name": "Altstadt",
+        "free": 188,
+        "total": 456,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:16+01:00"
+      },
+      "SP01": {
+        "id": "SP01",
+        "name": "am Gütsch",
+        "free": 73,
+        "total": 100,
+        "status": "open",
+        "timestamp": "2026-01-08T10:50:01+01:00"
+      },
+      "PKF": {
+        "id": "PKF",
+        "name": "Parkhaus Flora",
+        "free": 18,
+        "total": 65,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:46+01:00"
+      },
+      "NP07": {
+        "id": "NP07",
+        "name": "Schweizerhof",
+        "free": 21,
+        "total": 250,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:17+01:00"
+      },
+      "NP08": {
+        "id": "NP08",
+        "name": "Casino-Palace",
+        "free": 113,
+        "total": 250,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:17+01:00"
+      },
+      "SP06": {
+        "id": "SP06",
+        "name": "Bahnhofparking P3",
+        "free": 219,
+        "total": 447,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:16+01:00"
+      },
+      "SP05": {
+        "id": "SP05",
+        "name": "Bahnhofparking P1+P2",
+        "free": 239,
+        "total": 453,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:16+01:00"
+      },
+      "NP12": {
+        "id": "NP12",
+        "name": "Löwencenter",
+        "free": 64,
+        "total": 345,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:20+01:00"
+      },
+      "SP04": {
+        "id": "SP04",
+        "name": "Kantonalbank",
+        "free": 13,
+        "total": 280,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:12+01:00"
+      },
+      "NP11": {
+        "id": "NP11",
+        "name": "City-Parking",
+        "free": 261,
+        "total": 450,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:56+01:00"
+      },
+      "SP03": {
+        "id": "SP03",
+        "name": "Kesselturm",
+        "free": 97,
+        "total": 340,
+        "status": "open",
+        "timestamp": "2026-01-08T10:50:50+01:00"
+      },
+      "NP13": {
+        "id": "NP13",
+        "name": "Nationalhof",
+        "free": 66,
+        "total": 220,
+        "status": "open",
+        "timestamp": "2026-01-08T10:49:18+01:00"
+      },
+      "SP09": {
+        "id": "SP09",
+        "name": "Hirzenmatt",
+        "free": 0,
+        "total": 53,
+        "status": "open",
+        "timestamp": "2026-01-08T10:50:43+01:00"
+      }
+    }
+  },
+  "timestamp": "2026-01-08T10:51:12+01:00"
+}
