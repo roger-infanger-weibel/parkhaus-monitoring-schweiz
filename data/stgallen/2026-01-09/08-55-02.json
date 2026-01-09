@@ -1,0 +1,137 @@
+{
+  "status": "success",
+  "city": "stgallen",
+  "data": {
+    "parkings": {
+      "P22": {
+        "id": "P22",
+        "name": "Rathaus",
+        "free": 0,
+        "total": 83,
+        "status": "nodata",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P23": {
+        "id": "P23",
+        "name": "Manor",
+        "free": 19,
+        "total": 132,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P24": {
+        "id": "P24",
+        "name": "Bahnhof",
+        "free": 62,
+        "total": 275,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P31": {
+        "id": "P31",
+        "name": "Oberer Graben",
+        "free": 131,
+        "total": 138,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P42": {
+        "id": "P42",
+        "name": "Burggraben",
+        "free": 117,
+        "total": 337,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P52": {
+        "id": "P52",
+        "name": "Spelterini",
+        "free": 20,
+        "total": 155,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P43": {
+        "id": "P43",
+        "name": "Spisertor",
+        "free": 23,
+        "total": 35,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P54": {
+        "id": "P54",
+        "name": "OLMA Messen",
+        "free": 0,
+        "total": 90,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P21": {
+        "id": "P21",
+        "name": "Neumarkt",
+        "free": 80,
+        "total": 274,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P25": {
+        "id": "P25",
+        "name": "Kreuzbleiche",
+        "free": 0,
+        "total": 0,
+        "status": "nodata",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P41": {
+        "id": "P41",
+        "name": "Unterer Graben",
+        "free": 0,
+        "total": 0,
+        "status": "nodata",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P51": {
+        "id": "P51",
+        "name": "Stadtpark AZSG",
+        "free": 18,
+        "total": 88,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P32": {
+        "id": "P32",
+        "name": "Raiffeisen",
+        "free": 0,
+        "total": 96,
+        "status": "nodata",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P33": {
+        "id": "P33",
+        "name": "Einstein",
+        "free": 71,
+        "total": 187,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P44": {
+        "id": "P44",
+        "name": "Brühltor",
+        "free": 318,
+        "total": 448,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      },
+      "P53": {
+        "id": "P53",
+        "name": "OLMA Parkplatz",
+        "free": 0,
+        "total": 300,
+        "status": "open",
+        "timestamp": "2026-01-09T08:51:58+00:00"
+      }
+    }
+  },
+  "timestamp": "2026-01-09T08:55:02.826106"
+}
